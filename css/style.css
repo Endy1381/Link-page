@@ -32,14 +32,19 @@ body {
 .main {
     display: flex;
     justify-content: center;
+    transform: translateY(15%);
 }
 .card {
     border-radius: 10px;
     display: inline-block;
     background-color: hsl(0, 0%, 12%);
-    padding: 5%;
+    padding: 3%;
 }
 
+img {
+    width: 100px;
+    border-radius: 100%;
+}
 
 h1 {
     font-size: 170%;
