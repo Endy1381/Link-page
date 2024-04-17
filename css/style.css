@@ -1,3 +1,24 @@
+@keyframes hover {
+    from{
+        background-color: hsl(0, 0%, 20%);
+        color: white;
+    }
+    to{
+        background-color: hsl(75, 94%, 57%);
+        color: black;
+    }
+}
+@keyframes hover-reverse {
+    from{
+        background-color: hsl(75, 94%, 57%);
+        color: black; 
+    }
+    to{
+        background-color: hsl(0, 0%, 20%);
+        color: white;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,19 +34,35 @@ body {
     justify-content: center;
 }
 .card {
+    border-radius: 10px;
     display: inline-block;
     background-color: hsl(0, 0%, 12%);
     padding: 5%;
 }
+
+
+h1 {
+    font-size: 170%;
+}
 h3 {
+    font-size: 90%;
     color: hsl(75, 94%, 57%);
 }
+p {
+    padding-top: 8%;
+    padding-bottom: 6%;
+    font-size: 85%;
+}
+
+
+
 li {
     list-style-type: none;
 }
 
 a {
-    border-radius: 10px;
+    animation: hover-reverse 0.5s;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     margin: 4%;
@@ -33,4 +70,17 @@ a {
     color: white;
     text-decoration: none;
     background-color: hsl(0, 0%, 20%);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    animation: hover 0.5s ;
+}
+
+
+.info {
+    transform: scale(0.85);
 }
