@@ -32,13 +32,13 @@ body {
 .main {
     display: flex;
     justify-content: center;
-    transform: translateY(15%);
+    transform: translateY(14%);
 }
 .card {
     border-radius: 10px;
     display: inline-block;
     background-color: hsl(0, 0%, 12%);
-    padding: 3%;
+    padding: 4%;
 }
 
 img {
